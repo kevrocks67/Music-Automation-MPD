@@ -2,6 +2,11 @@
 This project is a series of bash and python scripts used to rotate music in MPD
 from a large collection of music based on genre.
 
+## Dependencies
+- MPD already setup
+- MPC
+- python 3
+
 ## Installation
 1. Clone this project to the /home/$USER/ folder
 2. Arrange your music by genre in folders within the /home/$USER/Music directory.
@@ -24,4 +29,7 @@ from a large collection of music based on genre.
 \* 0	\*\*\*	kevin	/bin/bash /etc/cron.d/cleanPlaylists.sh \>/dev/null 2>&1
 '''
 7. Test it out and make adjustments as needed to the crontab timing for addPlaylistMPD.sh.
+
+8. (Optional) Start the mpcGUI.py program if you want a simple interface for playing, pausing
+   or moving to the next or previous track. 
 

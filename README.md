@@ -21,12 +21,12 @@ from a large collection of music based on genre.
    will run the interpreter.py script in the Music-Automation folder. I personally use 40 minutes
    based on the amount of songs I have in my rotation file. This is my entry below.
    
-   		40 \*	\*\*\*	kevin	/bin/bash /etc/cron.d/addPlaylistMPD.sh \>/dev/null 2>&1
+   		40 *	***	kevin	/bin/bash /etc/cron.d/addPlaylistMPD.sh >/dev/null 2>&1
 
 6. Add another crontab entry for cleanPlaylists.sh. Have this one run once a week so that
    you dont keep old playlists the script creates. I like to have mine run at midnight sunday.
 
-		\* 0	\*\*\*	kevin	/bin/bash /etc/cron.d/cleanPlaylists.sh \>/dev/null 2>&1
+		* 0	***	kevin	/bin/bash /etc/cron.d/cleanPlaylists.sh >/dev/null 2>&1
 
 7. Test it out and make adjustments as needed to the crontab timing for addPlaylistMPD.sh.
 

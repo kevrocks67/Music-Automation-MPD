@@ -26,7 +26,7 @@ from a large collection of music based on genre.
 6. Add another crontab entry for cleanPlaylists.sh. Have this one run once a week so that
    you dont keep old playlists the script creates. I like to have mine run at midnight sunday.
 
-		* 0	***	kevin	/bin/bash /etc/cron.d/cleanPlaylists.sh >/dev/null 2>&1
+		* 0	**7	kevin	/bin/bash /etc/cron.d/cleanPlaylists.sh >/dev/null 2>&1
 
 7. Test it out and make adjustments as needed to the crontab timing for addPlaylistMPD.sh.
 
